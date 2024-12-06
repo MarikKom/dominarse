@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+        <div class="side__menu" id="side__menu">
+          <nav class="side__menu-nav">
+            <img class="side__menu-logo" src="/svgs/logo.svg" alt="Логотип Бокового Меню">
+            <ul>
+              <li><a href="#about">Знакомство</a></li>
+              <li><a href="#gallery">Галерея</a></li>
+              <li><a href="#group">Группы</a></li>
+              <li><a href="#questions">Вопросы</a></li>
+              <li><a href="#feedback">Отзывы</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <h2 class="side__title">Контакты</h2>
+
+            <div class="side__phone">
+              <a href="tel:+79057454247" class="phone__link-container">
+                <img class="contacts__phone-icon" src="/svgs/contacts-phone.svg" alt="Иконка телефона">
+                <div class="phone__right-side">
+                  <p class="phone__text">телефон</p>
+                  <p class="phone__number">+7 905 745 42 47</p>
+                </div>
+              </a>
+              </div>
+              
+              <div class="side__metro">
+              <div class="metro__container">
+                <div class="metro__icons">
+                  <img class="metro-icon" src="/svgs/contacts-metro-1.svg" alt="Иконка Метро">
+                  <img class="metro-icon" src="/svgs/contacts-metro-2.svg" alt="Иконка Метро 2">
+                </div>
+                <div class="metro__right-side">
+                  <p class="metro__text-title">метро</p>
+                  <p class="metro-adress">Проспект Мира 29</p>
+                </div>
+              </div>
+              </div>
+
+          </nav>
+        </div>
+
+
+        <div class="social__links">
+        <a href="https://t.me/olya_rudakova" target="_blank"> 
+          <img src="/svgs/sosial-link-telegram-img.svg" alt="Ссылка Телеграм">
+        </a>
+        <a href="https://wa.me/79057454247" target="_blank"> 
+          <img src="/svgs/sosial-link-whatsapp-img.svg" alt="Ссылка Whatsapp">
+        </a>
+      </div>
+
+      <aside id="popup" class="popup hidden" role="dialog" aria-labelledby="popup-title" >
+      <div class="popup__contact-form">
+
+        <button type="button" id="popupCloseButton" class="popup__button-close">
+          <img class="popup__close-icon" src="/svgs/popup-close-icon.svg" alt="закрыть">
+        </button>
+
+        <div class="popup__content">
+
+          <div class="popup__left-side">
+            <h2 class="popup__title">Готовы к своему<span class ='popup__word-decoration'> первому </span>занятию?</h2>
+            <p class="popup__text">Узнайте больше про первое занятие и запись</p>
+
+            <a href="tel:+79057454247" class="popup__phone-link">
+              <img class="popup__phone-icon" src="/svgs/popup-phone-icon.svg" alt="Иконка телефона">
+                <p class="popup__phone-number">+7 905 745 42 47</p>
+            </a>
+
+            <div class="popup__location">
+              <img class="popup__location-icon" src="/svgs/popup-location-icon.svg" alt="Адресс студии">
+                <p class="popup__location__text">Проспект Мира 29</p>
+            </div>
+            
+            <div class="popup__links">
+             <a href="https://t.me/olya_rudakova" target="_blank"><img src="/svgs/popup-telegram-icon.svg" alt="Ссылка на телеграм"></a> 
+             <a href="https://wa.me/79057454247" target="_blank" ><img src="/svgs/popup-whatsapp-icon.svg" alt="Ссылкак на Whatsapp"></a> 
+            </div>
+            
+          </div>
+
+          <div class="popup__right-side">
+
+          </div>
+
+          <div class="popup__right-side">
+            <form class="popup__form" action="#" method="post">
+            
+              <input id="popup__name" class="popup__input" type="text" name="popup__name" placeholder="Ваше имя" required>
+              
+              <input id="popup__phone" class="popup__input" type="text" name="popup__phone" placeholder="Телефон" required>
+              
+              <input id="popup__email" class="popup__input" type="text" name="popup__email" placeholder="Email">
+            
+              <div id="popup__input-open-div"></div>
+            
+              <textarea class="popup__textarea" id="popup__textarea" rows="3" name="popup__message" placeholder="Напишите свое сообщение"></textarea>
+            
+            
+              <button type="button" class="popup__button" id="sendPopupButton">
+                <img class="popup__button-img" src="/svgs/popup-button-img.svg" alt="Иконка телеграм на кнопке">
+                <p class="popup__button-text">отправить</p>
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+
+
+
+       <header class="header">
+        <div class="container">
+        <nav class="nav">
+          <div class="nav__left-side">
+            <a href="#main" class="logo-list">
+            <img src="/svgs/logo.svg" alt="logo" class="logo-img">
+            </a>
+          </div>
+
+          <button class="menu__btn" type="button">
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+          </button>
+          <div class="nav__right-side">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="#main">
+                  Главная
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#about">
+                  Знакомство
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#group">
+                  Группы
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#gallery">
+                  Галерея
+                </a>
+              </li>
+             
+              <li class="menu-item">
+                <a href="#feedback">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#questions">
+                  Вопросы
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#contacts">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu-item">
+                <button type="button" id="openPopupButton" class="button-popup">Подробнее</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+      </header> 
+
+      <main class="main">
+        
+         <section id="main" class="main-page">
+          <div class="container">
+          <h1 class="main-page__title">бачата-расскрывай свою<br> <span class="main-page__word"><span
+          class="main-page__word-letter">ж</span>енственность</span> в каждом движении </h1>
+          <div class="main-page__content">
+          <p class="main-page__text">открывайте для себя новые горизонты танца:
+            <br>запишитесь на занятие уже сегодня</p>
+          <button type="button" class="button" id="openPopupButton" >ЗАПИСАТЬСЯ</button>
+          
+        </div>   
+        <img src="/images/section1_bg2.png" alt="Фотография фона Оли Рудаковой" class="main-page__image-olga">
+          </div>
+          </section>
+        
+          <section id="about" class="about-me">
+            <div class="container">
+              
+              <div class="about-me__content">
+                <p class="about-me__signature">немного обо мне</p>
+                <h2 class="about-me__title">Привет! Меня зовут Оля</h2>
+                <hr class="decorative-line">
+                <p class="about-me__text">Я основательница студии танцев «Dominarse». Моё путешествие к танцам было непростым: после
+                аварии я потеряла руку, и казалось, что танцы останутся в прошлом. Но танец — это не просто движение, это свобода и сила
+                духа. Я решила не сдаваться и заново открыла для себя мир бачаты.
+                <br><br>
+                Сегодня я приглашаю вас в свою студию, где каждая женщина может почувствовать свою уникальность и красоту через танец.
+                Здесь мы учимся любить своё тело, двигаться с уверенностью и оставлять все ограничения за пределами зала. Приходите,
+                будем танцевать вместе и открывать для себя новый мир!
+                <br>Всем бачата!</p>
+              </div>
+              <div class="about-me__photo">
+                <img src="/images/section2_photo.png" alt="Фотография Ольги Рудаковой" class="about-me__img">
+              </div>
+            </div>
+          </section>
+
+          <section id="group" class="group">
+            <h2 class="group__title">Группы</h2>
+            <div class="container">
+
+              <article class="group__card">
+               
+                <img src="/images/group__card-1.jpg" alt="Группа Совершенствование">
+               
+                <div class="card__content">
+                  <h3 class="card__title"><span class="card-letter-decoration">С</span>овершенствование</h3>
+                  <p class="card__description">Для тех кто прошел курс “бачата с 0” и хочет продолжить совершенствовать свои навыки и развиваться вместе.
+                  </p>
+                </div>
+                <button type="button" class="group__button">ЗАПИСАТЬСЯ</button>
+                <hr class="group__decorative-line">
+              </article>
+
+              <article class="group__card">
+                <img src="/images/group__card-2.jpg" alt="Группа Бачата с нуля">
+                <div class="card__content">
+                  <h3 class="card__title"><span class="card-letter-decoration">Б</span>ачата с O</h3>
+                  <p class="card__description">Занятия в мини-группе для начинающих созданы для тех, кто хочет создать первые шаги в бачате. Одноразовый старт группы
+                  дает возможность всем участницам последовательно выучить элементы, также вам не придется «догонять» группу.
+                  </p>
+                </div>
+                <button type="button" class="group__button">ЗАПИСАТЬСЯ</button>
+                <hr class="group__decorative-line">
+              </article>
+
+              <article class="group__card">
+                <img src="/images/group__card-3.jpg" alt="Группа Индивидуальные">
+                <div class="card__content">
+                  <h3 class="card__title"><span class="card-letter-decoration">И</span>ндивидуальные</h3>
+                  <p class="card__description">Индивидуальные занятия подходят тем, кто хочет:<br>
+                  - попробывать свои силы в бачате и понять, подходит ли ему это напавление<br>
+                  - решить конкретные задания своего танца<br>
+                  - заниматься по индивидуальному плану
+
+                  </p>
+                </div>
+                <button type="button" class="group__button">ЗАПИСАТЬСЯ</button>
+                <hr class="group__decorative-line">
+              </article>
+
+            </div>
+          </section>
+
+          <section id="gallery" class="gallery">
+            </section>
+            
+         <section  id="videoSection" class="videoSection">
+         </section> 
+
+          <section class="studio">
+            <div class="studio__flowers">
+            <div class="studio__flowers-up">
+              <div class="studio__flower studio--flower--left--up"></div>
+              <div class="studio__flower studio--flower--right--up"></div>
+            </div>
+            <div class="studio__flowers-down">
+              <div class="studio__flower studio--flower--left--down"></div>
+              <div class="studio__flower studio--flower--right--down"></div>
+            </div>
+            </div>
+
+            <div class="container">
+              <h2 class="studio__title">Студия</h2>
+              <div class="studio__content">
+                <div class="content__left-side">
+                  <img class="studio__img-1" src="/images/studio__img-1.jpg" alt="First studio image">
+                  <p class="studio__description">Обустраивая свой зал я старалась продумать все до мелочей, чтобы вы чувствовали себя комфортно. Светлый зал с мягким
+                  освещением, оборудован кондиционером, вентилятором, хорошей системой вентиляции, качественной звуковой системой, удобной зоной ожидания и отдыха. Все это и приятная атмосфера студии наполнят вас вдохновением и силами для танцев. Я сама с любовью занималась созданием этой студии: продумала дизайн, и расписывала стены, снабдила студию всем необходимым
+                  оборудованием и приятными мелочами чтобы вам хотелось возвращаться сюда снова и снова.</p>
+                </div>
+                <div class="content__right-side">
+                  <div class="content__right-side--up">
+                  <img class="studio__img-2" src="/images/studio__img-2.jpg" alt="Second studio image">
+                  </div>
+                  
+                  <div class="content__right-side--down">
+                  <img class="studio__img-3" src="/images/studio__img-3.jpg" alt="Fourth studio image">
+                  
+                  <img class="studio__img-4" src="/images/studio__img-4.jpg" alt="Fifth studio image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="feedback" id="feedback"></section>
+
+
+           <div class="background__container">
+
+           <section class="questions" id="questions"></section>
+
+            <section id="contacts" class="contacts">
+              <div class="contacts__container">
+              <div class="contacts__map">
+                <div 
+                id="contacts__map-container" class="contacts__map-container"></div>
+              </div>
+              <div class="contacts__applicaton">
+                <h2 class="contacts__title">Создаем красоту движений вместе<br> жду вас в Dominarse
+                </h2>
+                <hr class="contacts__decorative-line">
+
+                <form class="contacts__form" action="#" method="post">
+
+                  <input id="contacts__name" class="contacts__input" type="text" 
+                  name="name" placeholder="Ваше имя"
+                  required>
+
+                  <input id="contacts__phone" class="contacts__input" type="text" 
+                  name="phone" placeholder="Телефон"
+                  required>
+
+                  <input id="contacts__email" class="contacts__input" type="text" 
+                  name="email" placeholder="Email">
+                  
+
+
+                  <div id="input__open-div"></div>
+
+                  <textarea id="contacts__textarea" rows="5" 
+                  name="message" placeholder="Напишите свое сообщение"></textarea>
+                  
+                  
+                  <button id="sendContactButton" type="button" class="contacts__button"><p class="contacts__button-text">отправить</p></button>
+                </form>
+
+                <div class="contacts__navigation">
+                  <div class="navigation__top">
+                    <a href="tel:+79057454247" class="phone__link-container">
+                      <img class="contacts__phone-icon" src="/svgs/contacts-phone.svg" alt="Иконка телефона">
+                      <div class="phone__right-side">
+                        <p class="phone__text">телефон</p>
+                        <p class="phone__number">+7 905 745 42 47</p>
+                      </div>
+                    </a>
+
+                    <div class="metro__container">
+                      <div class="metro__icons">
+                        <img class="metro-icon" src="/svgs/contacts-metro-1.svg" alt="Иконка Метро">
+                        <img class="metro-icon" src="/svgs/contacts-metro-2.svg" alt="Иконка Метро 2">
+                      </div>
+                      <div class="metro__right-side">
+                      <p class="metro__text-title">метро</p>
+                      <p class="metro-adress">Проспект Мира 29</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="contacts__navigation-links">
+                    <ul>
+                      <li>
+                        <a href="https://t.me/olya_rudakova" target="_blank">
+                        <img class="contacts__link-icon" src="/svgs/contacts-telegram.svg" alt="Иконка телеграм">
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href="https://wa.me/79057454247" target="_blank">
+                        <img class="contacts__link-icon" src="/svgs/contacts-whatsapp.svg" alt="Иконка вацап">
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href="https://www.instagram.com/dominarse_studio?igsh=c3J1OXNzdzY5ajRu" target="_blank">
+                        <img class="contacts__link-icon" src="/svgs/contacts-instagram.svg" alt="Иконка инстаграм">
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href="https://vk.com/dominarse_studio" target="_blank">
+                        <img class="contacts__link-icon" src="/svgs/contacts-vk.svg" alt="Иконка Вконтакте">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+              </div>
+            </section>
+          </div>        
+
+      </main>
+
+      <footer class="footer">
+        <img class='footer__bgi' src="../images/footer-bgi.jpg" alt="Изображение футера">
+        <div class="footer__container">
+          <img class="footer__logo" src='../svgs/footer-logo.svg' alt="Фон">
+          <p class="footer__text">Приходите, будем танцевать вместе!
+            <br>и открывать для себя новый мир!
+            <br>Всем Бачата!
+          </p>
+            <ul class="footer__nav">
+              <li><a href="#main">Главная</a></li>
+              <li><a href="#about">Знакомство</a></li>
+              <li><a href="#gallery">Галерея</a></li>
+              <li><a href="#group">Группы</a></li>
+              <li><a href="#questions">Вопросы</a></li>
+              <li><a href="#feedback">Отзывы</a></li>
+            </ul>
+            <ul class="footer__links">
+              <li>
+                <a href="https://wa.me/79057454247" target="_blank">
+                <img src='../svgs/footer-whatsapp-icon.svg' alt="ссылка на Whatsapp">
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/olya_rudakova" target="_blank">
+                <img src="../svgs/footer-tg-icon.svg" alt="ссылка на Телеграм">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/dominarse_studio?igsh=c3J1OXNzdzY5ajRu" target="_blank">
+                <img src="../svgs/footer-inst-icon.svg" alt="ссылка на Инстаграм">
+                </a>
+              </li>
+              <li>
+                <a href="https://vk.com/dominarse_studio" target="_blank">
+                <img src="../svgs/footer-vk-icon.svg" alt="ссылка на Вконтакте">
+                </a>
+              </li>
+            </ul>
+          <div class="footer__copyright">
+            <p>© 2024 «Dominarse». Все права защищены.</p>
+          </div>
+        </div>
+      </footer>
+    </div>  
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+.contacts__group-pluss{
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #EC97A8;;
+  margin-right: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contacts__group-pluss.minus{
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #EC97A8;
+  margin-right: 15px;
+}
+
+
+.contacts__group-list {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 7px;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  
+}
+
+.contacts__group-list.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.contact__group-choice {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contact__group-choice:hover{
+  background-color: #FDC1CD;
+  border-radius: 10px;
+}
+
+.contact__group-choice p {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 8px 16px;
+}
+
