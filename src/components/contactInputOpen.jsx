@@ -24,6 +24,7 @@ const ContactList = () => {
       </div>
 
       <input
+        id="hiddenGroupInputContacts"
         type='hidden'
         name="group"
         value={selectedValue === "Группа" ? "" : selectedValue}

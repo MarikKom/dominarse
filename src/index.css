@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Aurora Script';
-  src: url('/public/fonts/aurorascript.ttf') format('ttf');
+  src: url('/fonts/aurorascript.ttf') format('truetype');
 }
 
 html{

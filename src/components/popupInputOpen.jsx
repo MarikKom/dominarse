@@ -24,6 +24,7 @@ const PopupList = () => {
       </div>
 
       <input
+        id="hiddenGroupInput"
         type='hidden'
         name="group"
         value={selectedValue === "Группа" ? "" : selectedValue}
