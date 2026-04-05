@@ -116,90 +116,90 @@ ReactDOM.createRoot(document.getElementById('popup__input-open-div')).render(
 );
 
 
-document.getElementById('sendPopupButton').addEventListener('click', () => {
-  const name = document.getElementById('popup__name').value;
-  const phone = document.getElementById('popup__phone').value;
-  const email = document.getElementById('popup__email').value;
-  const group = document.getElementById('hiddenGroupInput').value;
-  const message = document.getElementById('popup__textarea').value;
+// document.getElementById('sendPopupButton').addEventListener('click', () => {
+//   const name = document.getElementById('popup__name').value;
+//   const phone = document.getElementById('popup__phone').value;
+//   const email = document.getElementById('popup__email').value;
+//   const group = document.getElementById('hiddenGroupInput').value;
+//   const message = document.getElementById('popup__textarea').value;
 
-  const groupId = '-4710526331' ;
-  const token = '7748336423:AAHu2tr-FzGdWdccTk-gKnU2ZQrtQzjMyps' ;
-  const text = `
-  Новая заявка с сайта:
-  Имя: ${name}
-  Телефон: ${phone}
-  Email: ${email}
-  Группа: ${group}
-  Сообщение: ${message}
-  `;
+//   const groupId = '-4710526331' ;
+//   const token = '7748336423:AAHu2tr-FzGdWdccTk-gKnU2ZQrtQzjMyps' ;
+//   const text = `
+//   Новая заявка с сайта:
+//   Имя: ${name}
+//   Телефон: ${phone}
+//   Email: ${email}
+//   Группа: ${group}
+//   Сообщение: ${message}
+//   `;
 
-  fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: groupId,
-      text: text,
-    }),
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert(`Coобщение успешно отправлено!`);
-        document.querySelector('.popup__form').reset();
-      } else {
-        return response.json().then((data) => {
-          console.error('Ошибка от Telegram:', data);
-          alert('Ошибка отправки сообщения: ' + (data.description || 'Неизвестная ошибка'));
-        });
-      }
-    })
-    .catch((error) => {
-      console.error('Ошибка:', error);
-      alert('Ошибка подключения к Telegram');
-    });
-});
+//   fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify({
+//       chat_id: groupId,
+//       text: text,
+//     }),
+//   })
+//     .then((response) => {
+//       if (response.ok) {
+//         alert(`Coобщение успешно отправлено!`);
+//         document.querySelector('.popup__form').reset();
+//       } else {
+//         return response.json().then((data) => {
+//           console.error('Ошибка от Telegram:', data);
+//           alert('Ошибка отправки сообщения: ' + (data.description || 'Неизвестная ошибка'));
+//         });
+//       }
+//     })
+//     .catch((error) => {
+//       console.error('Ошибка:', error);
+//       alert('Ошибка подключения к Telegram');
+//     });
+// });
 
 
 
-document.getElementById('sendContactButton').addEventListener('click', () => {
-  const name = document.getElementById('contacts__name').value;
-  const phone = document.getElementById('contacts__phone').value;
-  const email = document.getElementById('contacts__email').value;
-  const group = document.getElementById('hiddenGroupInputContacts').value;
-  const message = document.getElementById('contacts__textarea').value;
+// document.getElementById('sendContactButton').addEventListener('click', () => {
+//   const name = document.getElementById('contacts__name').value;
+//   const phone = document.getElementById('contacts__phone').value;
+//   const email = document.getElementById('contacts__email').value;
+//   const group = document.getElementById('hiddenGroupInputContacts').value;
+//   const message = document.getElementById('contacts__textarea').value;
 
-  const groupId = '-4710526331' ;
-  const token = '7748336423:AAHu2tr-FzGdWdccTk-gKnU2ZQrtQzjMyps' ;
-  const text = `
-  Новая заявка с сайта:
-  Имя: ${name}
-  Телефон: ${phone}
-  Email: ${email}
-  Группа: ${group}
-  Сообщение: ${message}
-  `;
+//   const groupId = '-4710526331' ;
+//   const token = '7748336423:AAHu2tr-FzGdWdccTk-gKnU2ZQrtQzjMyps' ;
+//   const text = `
+//   Новая заявка с сайта:
+//   Имя: ${name}
+//   Телефон: ${phone}
+//   Email: ${email}
+//   Группа: ${group}
+//   Сообщение: ${message}
+//   `;
 
-  fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: groupId,
-      text: text,
-    }),
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert(`Coобщение успешно отправлено!`);
-        document.querySelector('.popup__form').reset();
-      } else {
-        return response.json().then((data) => {
-          console.error('Ошибка от Telegram:', data);
-          alert('Ошибка отправки сообщения: ' + (data.description || 'Неизвестная ошибка'));
-        });
-      }
-    })
-    .catch((error) => {
-      console.error('Ошибка:', error);
-      alert('Ошибка подключения к Telegram');
-    });
-});
+//   fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify({
+//       chat_id: groupId,
+//       text: text,
+//     }),
+//   })
+//     .then((response) => {
+//       if (response.ok) {
+//         alert(`Coобщение успешно отправлено!`);
+//         document.querySelector('.popup__form').reset();
+//       } else {
+//         return response.json().then((data) => {
+//           console.error('Ошибка от Telegram:', data);
+//           alert('Ошибка отправки сообщения: ' + (data.description || 'Неизвестная ошибка'));
+//         });
+//       }
+//     })
+//     .catch((error) => {
+//       console.error('Ошибка:', error);
+//       alert('Ошибка подключения к Telegram');
+//     });
+// });
